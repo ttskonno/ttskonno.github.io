@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Cryptocurrency | こんたつブログ]]></title>
+  <link href="http://ttskonno.github.io/blog/categories/cryptocurrency/atom.xml" rel="self"/>
+  <link href="http://ttskonno.github.io/"/>
+  <updated>2018-05-24T06:17:35+09:00</updated>
+  <id>http://ttskonno.github.io/</id>
+  <author>
+    <name><![CDATA[ttskonno]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[My仮想通貨を60分で作ってみた話]]></title>
+    <link href="http://ttskonno.github.io/blog/2018/05/23/mycryptocurrency/"/>
+    <updated>2018-05-23T19:53:57+09:00</updated>
+    <id>http://ttskonno.github.io/blog/2018/05/23/mycryptocurrency</id>
+    <content type="html"><![CDATA[<p>ネットニュースの仮想通貨やICOの話が、イマイチ頭に染み込まない、自分の言葉で説明できない今日この頃。ハンズオンで自分の仮想通貨ができてしまうというステキな勉強会を開いてくれるというので、雨の渋谷に行ってきました。</p>
+
+<p>結論、めちゃおもろい。ツールも既に結構揃ってて（ほとんどドキュメント英語だけど）、コマンドライン打てなかったり、コード書けなくてもある程度まではいじいじできることがわかりました。</p>
+
+<h2>頭に残ったキーワード</h2>
+
+<ul>
+<li>Wallet(MetaMask/CiperBrowser/MyEtherWallet)</li>
+<li>Address</li>
+<li>Vault</li>
+<li>Faucet</li>
+<li>ETH/Wei</li>
+<li>remix.ethereum.org</li>
+<li>etherscan</li>
+<li>PoW</li>
+<li>Transaction</li>
+<li>Contract</li>
+<li>Token</li>
+<li>Dapp</li>
+</ul>
+
+
+<h2>印象に残った話</h2>
+
+<ul>
+<li><p>スタートアップ界隈ではブロックチェーンを使ったプロダクトやサービスがコンテストに参加したりしているが、「それって本当にブロックチェーンじゃなきゃだめなの？」って話に必ずなる</p></li>
+<li><p>スマートコントラクトについて、自動販売機のアナロジーはよく聞かれるが、詳しい人から見ても、わかりやすい良い例とのこと（誰が言い始めたんだろう）</p></li>
+<li><p>マイナーさんはMainnet/Testnetに関わらず、トランザクションの手数料でも稼いでいる</p></li>
+<li><p>ICOで上手く行っている例はまだ聞いたことがない（このあたりは事例を掘ってみると良い）</p></li>
+</ul>
+
+
+<h2>深めるといいことあるかもなポイント</h2>
+
+<ul>
+<li><p>Dapp開発。これで具体的に何ができるようになるのか、WWWにおけるWebAppとの差異、強みが知りたい。</p></li>
+<li><p>今のBlockchainは、WWWの黎明期の状態に似ている。DARPANETとかインターネットの夜明けに関するストーリーを知りたい。</p></li>
+</ul>
+
+
+<h2>まとめと感想</h2>
+
+<h2>このあとの学習法</h2>
+
+<ul>
+<li><p>CryptoZombies</p></li>
+<li><p>Udemy Splidity</p></li>
+<li><p>ブロックチェーンアプリケーション開発の教科書</p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

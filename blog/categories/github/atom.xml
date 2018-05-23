@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Github | こんたつブログ]]></title>
+  <link href="http://ttskonno.github.io/blog/categories/github/atom.xml" rel="self"/>
+  <link href="http://ttskonno.github.io/"/>
+  <updated>2018-05-24T06:17:35+09:00</updated>
+  <id>http://ttskonno.github.io/</id>
+  <author>
+    <name><![CDATA[ttskonno]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[OctopressでGithub Pagesにブログをポストするまでの話]]></title>
+    <link href="http://ttskonno.github.io/blog/2018/05/22/test/"/>
+    <updated>2018-05-22T14:05:03+09:00</updated>
+    <id>http://ttskonno.github.io/blog/2018/05/22/test</id>
+    <content type="html"><![CDATA[<p>普段自分にインプットしている情報はおそらく、</p>
+
+<ul>
+<li>そのまま腹落ちさせてじわじわと活用する大器晩成型</li>
+<li>すぐにアウトプットすることが、未来の自分を含めた誰かの価値になる即戦力型</li>
+</ul>
+
+
+<p>に分かれる、と考えています。</p>
+
+<p>そのうち、後者を実現するメソッドを探していました。SNSも多様化しているので、何か既存のプラットフォームでやるならどれがいいかなーと軽く考えたのですが、「ベタだけど、やっぱブログだな」、ということになりました。</p>
+
+<p>ブログも色々あるようですが、このOctopressが面白そうなので、ホリデープログラマーよろしく、たまーにいじくりながら、好きなことを書き書きしてみたいと思います。</p>
+
+<p>とりあえず、まずはこのOctopress環境立上げにやったことをめもめも。</p>
+
+<h2>Octopressとは</h2>
+
+<p>Markdownでラクに書けるブログジェネレータ。Github Pagesにホスティングさせれば無料公開できるだけでなく、バージョン管理もワンストップにできる。</p>
+
+<p><a href="http://octopress.org/">http://octopress.org/</a>
+<a href="https://pages.github.com/">https://pages.github.com/</a></p>
+
+<h2>必要な知識</h2>
+
+<ul>
+<li>CUI</li>
+<li>git/Github</li>
+<li>markdown記法</li>
+</ul>
+
+
+<h2>セットアップ</h2>
+
+<pre><code>$ git clone git://github.com/imathis/octopress.git Octopress
+$ cd octopress
+$ bundle install --path vendor/bundle
+$ rake install
+$ rake generate
+$ rake preview
+$ #-&gt; ブラウザでlocalhost:4000すればプレビューできる
+</code></pre>
+
+<h2>Github Pagesとの連携</h2>
+
+<p>あらかじめGithubで<code>username.github.io</code>というレポジトリを作成し、レポジトリのURLをコピペ。
+```
+$ rake setup_github_pages
+Enter the read/write url for your repository
+(For example, &lsquo;git@github.com:your_username/your_username.github.io.git)
+           or '<a href="https://github.com/your_username/your_username.github.io">https://github.com/your_username/your_username.github.io</a>&rsquo;)
+Repository url: git@github.com:ttskonno/ttskonno.github.io.git
+&hellip;</p>
+
+<h2>Now you can deploy to git@github.com:ttskonno/ttskonno.github.io.git with <code>rake deploy</code></h2>
+
+<pre><code>
+## デプロイ
+</code></pre>
+
+<p>$ rake generate</p>
+
+<h2>Generating Site with Jekyll</h2>
+
+<pre><code>write source/stylesheets/screen.css
+</code></pre>
+
+<p>Configuration file: /{$folder}/octopress/_config.yml
+            Source: source
+       Destination: public
+      Generating&hellip;
+                    done.
+ Auto-regeneration: disabled. Use &ndash;watch to enable.
+$ rake deploy</p>
+
+<pre><code>
+### 記事の投稿
+</code></pre>
+
+<p>$ rake new_post[&lsquo;title&rsquo;]
+$ #-> source/_post/に、YYYY-MM-DD-post-title.markdownというファイルができるので、これを編集する。</p>
+
+<p>```</p>
+
+<h2>参考</h2>
+
+<p><a href="http://karaage.hatenadiary.jp/entry/2017/09/06/073000">http://karaage.hatenadiary.jp/entry/2017/09/06/073000</a>
+<a href="https://gam0022.net/blog/2013/09/28/speed-up-octopress-site-generation/">https://gam0022.net/blog/2013/09/28/speed-up-octopress-site-generation/</a>
+<a href="http://yujilow1220.github.io/2014-12-14/remove-error-for-octopress/">http://yujilow1220.github.io/2014-12-14/remove-error-for-octopress/</a>
+<a href="https://arimasou16.com/blog/2017/02/03/00196/">https://arimasou16.com/blog/2017/02/03/00196/</a>
+<a href="https://qiita.com/gam0022/items/7b5a6e4492c90583706f">https://qiita.com/gam0022/items/7b5a6e4492c90583706f</a></p>
+]]></content>
+  </entry>
+  
+</feed>
