@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Github | こんたつブログ]]></title>
   <link href="http://ttskonno.github.io/blog/categories/github/atom.xml" rel="self"/>
   <link href="http://ttskonno.github.io/"/>
-  <updated>2018-05-24T06:17:35+09:00</updated>
+  <updated>2018-05-24T06:25:25+09:00</updated>
   <id>http://ttskonno.github.io/</id>
   <author>
     <name><![CDATA[ttskonno]]></name>
@@ -28,11 +28,11 @@
 
 <p>に分かれる、と考えています。</p>
 
-<p>そのうち、後者を実現するメソッドを探していました。SNSも多様化しているので、何か既存のプラットフォームでやるならどれがいいかなーと軽く考えたのですが、「ベタだけど、やっぱブログだな」、ということになりました。</p>
+<p>そのうち、後者を実現するメソッドを探していました。SNSも多様化しているので、何か既存のプラットフォームでやるならどれがいいかなーと軽く考えたのですが、「ベタだけど、やっぱブログだな」、ということになりました。自分会議。</p>
 
 <p>ブログも色々あるようですが、このOctopressが面白そうなので、ホリデープログラマーよろしく、たまーにいじくりながら、好きなことを書き書きしてみたいと思います。</p>
 
-<p>とりあえず、まずはこのOctopress環境立上げにやったことをめもめも。</p>
+<p>とりあえず、まずはこのOctopressでブログ投稿に必要な環境構築にやったことをめもめも。</p>
 
 <h2>Octopressとは</h2>
 

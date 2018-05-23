@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Solidity | こんたつブログ]]></title>
   <link href="http://ttskonno.github.io/blog/categories/solidity/atom.xml" rel="self"/>
   <link href="http://ttskonno.github.io/"/>
-  <updated>2018-05-24T06:17:35+09:00</updated>
+  <updated>2018-05-24T06:25:25+09:00</updated>
   <id>http://ttskonno.github.io/</id>
   <author>
     <name><![CDATA[ttskonno]]></name>
@@ -25,7 +25,20 @@
 <h2>頭に残ったキーワード</h2>
 
 <ul>
-<li>Wallet(MetaMask/CiperBrowser/MyEtherWallet)</li>
+<li>Wallet
+
+<ul>
+<li>MetaMask</li>
+<li>CiperBrowser</li>
+<li>MyEtherWallet</li>
+</ul>
+</li>
+<li>Network
+
+<ul>
+<li>Ropsten</li>
+</ul>
+</li>
 <li>Address</li>
 <li>Vault</li>
 <li>Faucet</li>
@@ -33,7 +46,7 @@
 <li>remix.ethereum.org</li>
 <li>etherscan</li>
 <li>PoW</li>
-<li>Transaction</li>
+<li>Transaction(Tx)</li>
 <li>Contract</li>
 <li>Token</li>
 <li>Dapp</li>
