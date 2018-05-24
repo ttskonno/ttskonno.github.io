@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Android Thingsはおもしろそうなので調べてみようという話 - こんたつブログ</title>
+  <meta name="author" content="ttskonno">
+
+  
+  <meta name="description" content="Wireless Japan 2018に行ってきまして、色々とお勉強になりそうなネタを得たのでめもめも。 先日のGoogle I/OでAndroid Things 1.0が宣言されたとのことでした。自分のアンテナの低さに驚きつつ、ワクワクしながらAndroid技術者の方々のセミナーを聞いてきました &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://ttskonno.github.io/blog/2018/05/24/android-of-things">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="こんたつブログ" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet" type="text/css">
+<!--- MathJax Configuration -->
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+</head>
+
+<body   class="collapse-sidebar sidebar-footer" >
+  <header role="banner"><hgroup>
+  <h1><a href="/">こんたつブログ</a></h1>
+  
+    <h2>トリハダ信じて進めホリデープログラマー日記</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscribe" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS" target="_blank"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewbox="0 0 100 100"><path class="social" d="M 13.310204,73.332654 C 5.967347,73.332654 0,79.322448 0,86.621428 c 0,7.338776 5.967347,13.262246 13.310204,13.262246 7.370408,0 13.328572,-5.92245 13.328572,-13.262246 0,-7.29898 -5.958164,-13.288774 -13.328572,-13.288774 z M 0.01530612,33.978572 V 53.143878 C 12.493878,53.143878 24.229592,58.02347 33.068368,66.865306 41.894898,75.685714 46.767346,87.47449 46.767346,100 h 19.25 C 66.017346,63.592858 36.4,33.979592 0.01530612,33.978572 l 0,0 z M 0.03877552,0 V 19.17449 C 44.54796,19.17551 80.77551,55.437756 80.77551,100 H 100 C 100,44.87653 55.15102,0 0.03877552,0 z"></path></svg></a></li>
+  
+</ul>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+      <form action="https://www.google.com/search" method="get">
+        <fieldset role="search">
+          <input type="hidden" name="sitesearch" value="ttskonno.github.io" />
+    
+          <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+        </fieldset>
+      </form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      
+        <h1 class="entry-title">Android Thingsはおもしろそうなので調べてみようという話</h1>
+      
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2018-05-24T13:15:34+09:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2018</span></span> <span class='time'>1:15 pm</span></time>
+        
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Wireless Japan 2018に行ってきまして、色々とお勉強になりそうなネタを得たのでめもめも。</p>
+
+<p>先日のGoogle I/OでAndroid Things 1.0が宣言されたとのことでした。自分のアンテナの低さに驚きつつ、ワクワクしながらAndroid技術者の方々のセミナーを聞いてきました。</p>
+
+<h2>Android Things x Kotlin x Deep Learning</h2>
+
+<p>Android ThingsとはGoogleが提供するIoT向けプラットフォーム。</p>
+
+<ul>
+<li><p>Android Things</p>
+
+<ul>
+<li>AndroidのAPIが使える</li>
+<li>4つの生産PF／2つの開発PF　ラズパイ含む</li>
+<li>カーネル、ファームウェアはGoogleが開発</li>
+<li>周辺機器IF　Peripheral I/O API　GPIO/PWM/I2C/SPI/UART</li>
+<li>Google Play Services/Firebase/Google Cloud</li>
+<li>一貫性、コスト、セキュリティ->解決！</li>
+</ul>
+</li>
+<li><p>Kotlin</p>
+
+<ul>
+<li>Androidの標準プログラミング言語</li>
+<li>Javaライブラリ互換</li>
+<li>静的型付け言語</li>
+<li>オブジェクト指向</li>
+<li>関数型プログラミング</li>
+<li>安全(?)</li>
+</ul>
+</li>
+<li><p>Android Things x Kotlin x Deep learning</p>
+
+<ul>
+<li>TensorFlow Lite</li>
+<li>Edge Computing   cf. Cloud Computing</li>
+</ul>
+</li>
+<li><p>（例）テレビ漬け防止強制OFFガジェット</p>
+
+<ul>
+<li>Android Studioでプロジェクト作成</li>
+<li>転移学習（Transfer Learning）</li>
+<li>TensorFlow Liteにモデルを転送</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>NFCタグが最近かなり身近になったという話</h2>
+
+<p>1枚50~60円のNFCタグを色んなところに貼りまくって、AndroidスマホのNFCリーダで、予め書き込んだURLを読み取って色々できる。</p>
+
+<p>子どもの遊びとの親和性がめちゃ高いようです。おもちゃにタグ貼り付けて2歳の子どもがスマホで読み取ってリンクをタップしてYoutube動画を観る、なんていうシーンは感動すら覚える。</p>
+
+<p>中国のQRコード社会現象が盛り上がってる中、価格が更に下がれば、まだまだ可能性があるなあと思いました。</p>
+
+<h2>IoTで仮説検証をさくっとやりましょうという話</h2>
+
+<p>沖縄に移住したスピーカーの方が、高温多湿の生活で不健康にならないよう、既存のサービスでかなり簡単に温湿度モニタリングができちゃうようにしちゃったという話からスタート。</p>
+
+<p>嫌いではないけれど精神的ハードルがあるハンダ付け。ハンダ付けなしでやってみようという制約を自らに課し、Google Spreadsheet、RasPi Zero W（WiFi、BLE対応。これ欲しい！）、WxBeacon2で作っちゃった。</p>
+
+<p>これだけだとAndroid感がないが、次の話では、Pimoroni Rainbow HAT for Android Things + Raspberry PiというAndroid Things対応の拡張ボードと、Wio Nodeというボードを使った、キティちゃんのM&amp;Msディスペンサーを作ったという話を聞けた。ハッカー感がスゴイ。</p>
+
+<h2>IoT（=ものづくりの手段）自体をもっと手軽にしたいという話</h2>
+
+<p>有名な方らしいが、超熱い、「IoTをもっと手軽にしたい！今後は全ての企業がIT/IoT企業になる！」と語っていらした。</p>
+
+<p>自社のプロダクトである、NefryとかWaffleとかいうデバイスが販売中らしいのですが、プレゼンの中で仕様とオモロイ点を聞き逃してしまったので、このあと改めてブースに立ち寄るか、調べてみたいと思う。</p>
+
+<h2>感想めいたもの</h2>
+
+<p>2年ほど前、Arduinoと土壌センサーで観葉植物IoTをやってみたことがあるが、こういったことがさくっとできてしまう色んなサービスやデバイスが増えてきているという印象を強く受けました。</p>
+
+<p>これからの子どもたちがとっつきやすい教育寄りのプロダクトもかなり出てきている。息子たちにもいつか遊ばせてやりたい、と率直に思いました。まず何か自分がさくっと作って、彼らに遊んでもらって、自然と彼らも作りたくなって、みたいな流れが理想です。</p>
+
+<p>とりあえず、</p>
+
+<ul>
+<li>Android Things</li>
+<li>TensorFlow Lite</li>
+<li>Raspberry Pi Zero W</li>
+<li>RxBeacon2</li>
+<li>Wio Node</li>
+</ul>
+
+
+<p>あたりはさくっと試してみたいと思います。そしてまたここに結果を書き残してみたい思います。</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+
+
+  <span class="byline author vcard">Authored by <span class="fn">
+  
+    ttskonno
+  
+  </span></span>
+
+
+      
+
+
+
+
+<time class='entry-date' datetime='2018-05-24T13:15:34+09:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2018</span></span> <span class='time'>1:15 pm</span></time>
+      
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/android/'>android,</a>, <a class='category' href='/blog/categories/googleio/'>googleio,</a>, <a class='category' href='/blog/categories/iot/'>iot</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://ttskonno.github.io/blog/2018/05/24/android-of-things/" data-via="" data-counturl="http://ttskonno.github.io/blog/2018/05/24/android-of-things/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2018/05/23/mycryptocurrency/" title="Previous Post: My仮想通貨を60分で作ってみた話">&laquo; My仮想通貨を60分で作ってみた話</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+
+</div>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2018 - ttskonno -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a> | Themed with <a href="https://github.com/lucaslew/whitespace">Whitespace</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

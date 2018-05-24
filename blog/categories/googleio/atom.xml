@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Googleio, | こんたつブログ]]></title>
+  <link href="http://ttskonno.github.io/blog/categories/googleio/atom.xml" rel="self"/>
+  <link href="http://ttskonno.github.io/"/>
+  <updated>2018-05-24T13:52:59+09:00</updated>
+  <id>http://ttskonno.github.io/</id>
+  <author>
+    <name><![CDATA[ttskonno]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Android Thingsはおもしろそうなので調べてみようという話]]></title>
+    <link href="http://ttskonno.github.io/blog/2018/05/24/android-of-things/"/>
+    <updated>2018-05-24T13:15:34+09:00</updated>
+    <id>http://ttskonno.github.io/blog/2018/05/24/android-of-things</id>
+    <content type="html"><![CDATA[<p>Wireless Japan 2018に行ってきまして、色々とお勉強になりそうなネタを得たのでめもめも。</p>
+
+<p>先日のGoogle I/OでAndroid Things 1.0が宣言されたとのことでした。自分のアンテナの低さに驚きつつ、ワクワクしながらAndroid技術者の方々のセミナーを聞いてきました。</p>
+
+<h2>Android Things x Kotlin x Deep Learning</h2>
+
+<p>Android ThingsとはGoogleが提供するIoT向けプラットフォーム。</p>
+
+<ul>
+<li><p>Android Things</p>
+
+<ul>
+<li>AndroidのAPIが使える</li>
+<li>4つの生産PF／2つの開発PF　ラズパイ含む</li>
+<li>カーネル、ファームウェアはGoogleが開発</li>
+<li>周辺機器IF　Peripheral I/O API　GPIO/PWM/I2C/SPI/UART</li>
+<li>Google Play Services/Firebase/Google Cloud</li>
+<li>一貫性、コスト、セキュリティ->解決！</li>
+</ul>
+</li>
+<li><p>Kotlin</p>
+
+<ul>
+<li>Androidの標準プログラミング言語</li>
+<li>Javaライブラリ互換</li>
+<li>静的型付け言語</li>
+<li>オブジェクト指向</li>
+<li>関数型プログラミング</li>
+<li>安全(?)</li>
+</ul>
+</li>
+<li><p>Android Things x Kotlin x Deep learning</p>
+
+<ul>
+<li>TensorFlow Lite</li>
+<li>Edge Computing   cf. Cloud Computing</li>
+</ul>
+</li>
+<li><p>（例）テレビ漬け防止強制OFFガジェット</p>
+
+<ul>
+<li>Android Studioでプロジェクト作成</li>
+<li>転移学習（Transfer Learning）</li>
+<li>TensorFlow Liteにモデルを転送</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>NFCタグが最近かなり身近になったという話</h2>
+
+<p>1枚50~60円のNFCタグを色んなところに貼りまくって、AndroidスマホのNFCリーダで、予め書き込んだURLを読み取って色々できる。</p>
+
+<p>子どもの遊びとの親和性がめちゃ高いようです。おもちゃにタグ貼り付けて2歳の子どもがスマホで読み取ってリンクをタップしてYoutube動画を観る、なんていうシーンは感動すら覚える。</p>
+
+<p>中国のQRコード社会現象が盛り上がってる中、価格が更に下がれば、まだまだ可能性があるなあと思いました。</p>
+
+<h2>IoTで仮説検証をさくっとやりましょうという話</h2>
+
+<p>沖縄に移住したスピーカーの方が、高温多湿の生活で不健康にならないよう、既存のサービスでかなり簡単に温湿度モニタリングができちゃうようにしちゃったという話からスタート。</p>
+
+<p>嫌いではないけれど精神的ハードルがあるハンダ付け。ハンダ付けなしでやってみようという制約を自らに課し、Google Spreadsheet、RasPi Zero W（WiFi、BLE対応。これ欲しい！）、WxBeacon2で作っちゃった。</p>
+
+<p>これだけだとAndroid感がないが、次の話では、Pimoroni Rainbow HAT for Android Things + Raspberry PiというAndroid Things対応の拡張ボードと、Wio Nodeというボードを使った、キティちゃんのM&amp;Msディスペンサーを作ったという話を聞けた。ハッカー感がスゴイ。</p>
+
+<h2>IoT（=ものづくりの手段）自体をもっと手軽にしたいという話</h2>
+
+<p>有名な方らしいが、超熱い、「IoTをもっと手軽にしたい！今後は全ての企業がIT/IoT企業になる！」と語っていらした。</p>
+
+<p>自社のプロダクトである、NefryとかWaffleとかいうデバイスが販売中らしいのですが、プレゼンの中で仕様とオモロイ点を聞き逃してしまったので、このあと改めてブースに立ち寄るか、調べてみたいと思う。</p>
+
+<h2>感想めいたもの</h2>
+
+<p>2年ほど前、Arduinoと土壌センサーで観葉植物IoTをやってみたことがあるが、こういったことがさくっとできてしまう色んなサービスやデバイスが増えてきているという印象を強く受けました。</p>
+
+<p>これからの子どもたちがとっつきやすい教育寄りのプロダクトもかなり出てきている。息子たちにもいつか遊ばせてやりたい、と率直に思いました。まず何か自分がさくっと作って、彼らに遊んでもらって、自然と彼らも作りたくなって、みたいな流れが理想です。</p>
+
+<p>とりあえず、</p>
+
+<ul>
+<li>Android Things</li>
+<li>TensorFlow Lite</li>
+<li>Raspberry Pi Zero W</li>
+<li>RxBeacon2</li>
+<li>Wio Node</li>
+</ul>
+
+
+<p>あたりはさくっと試してみたいと思います。そしてまたここに結果を書き残してみたい思います。</p>
+]]></content>
+  </entry>
+  
+</feed>
