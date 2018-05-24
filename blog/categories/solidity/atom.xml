@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Solidity | こんたつブログ]]></title>
   <link href="http://ttskonno.github.io/blog/categories/solidity/atom.xml" rel="self"/>
   <link href="http://ttskonno.github.io/"/>
-  <updated>2018-05-24T06:25:25+09:00</updated>
+  <updated>2018-05-24T10:27:44+09:00</updated>
   <id>http://ttskonno.github.io/</id>
   <author>
     <name><![CDATA[ttskonno]]></name>
@@ -20,12 +20,16 @@
     <id>http://ttskonno.github.io/blog/2018/05/23/mycryptocurrency</id>
     <content type="html"><![CDATA[<p>ネットニュースの仮想通貨やICOの話が、イマイチ頭に染み込まない、自分の言葉で説明できない今日この頃。ハンズオンで自分の仮想通貨ができてしまうというステキな勉強会を開いてくれるというので、雨の渋谷に行ってきました。</p>
 
-<p>結論、めちゃおもろい。ツールも既に結構揃ってて（ほとんどドキュメント英語だけど）、コマンドライン打てなかったり、コード書けなくてもある程度まではいじいじできることがわかりました。</p>
+<p>結論、めちゃおもろい。</p>
+
+<p>ツールも既に結構揃ってて（ほとんどアプリもドキュメント英語だけど）、コマンドライン打てなかったり、さくさくコード書けなくてもある程度まではいじいじできることがわかりました。</p>
 
 <h2>頭に残ったキーワード</h2>
 
+<p>ブロックチェーン（特にEthereum）を説明するに不可欠なキーワードなどなど。</p>
+
 <ul>
-<li>Wallet
+<li>Wallet　秘密鍵の管理ツール
 
 <ul>
 <li>MetaMask</li>
@@ -33,52 +37,65 @@
 <li>MyEtherWallet</li>
 </ul>
 </li>
-<li>Network
+<li>Network　ブロックチェーンネットワーク
 
 <ul>
 <li>Ropsten</li>
 </ul>
 </li>
-<li>Address</li>
-<li>Vault</li>
+<li>Address　ブロックチェーン上の自分の位置情報のようなもの</li>
+<li>Vault　</li>
 <li>Faucet</li>
-<li>ETH/Wei</li>
-<li>remix.ethereum.org</li>
-<li>etherscan</li>
-<li>PoW</li>
-<li>Transaction(Tx)</li>
+<li>ETH/Wei　ethereumの通貨単位</li>
+<li>remix.ethereum.org　</li>
+<li>etherscan　自分のアドレスに紐づく多くの情報が可視化されるサイト</li>
+<li>PoW　コンセンサスアルゴリズムの一種</li>
+<li>Transaction(Tx)　</li>
 <li>Contract</li>
 <li>Token</li>
-<li>Dapp</li>
+<li>Dapp　ブロックチェーン上で開発できるアプリケーション</li>
+<li>Solidity　Dappを記述するJS由来の言語</li>
 </ul>
 
+
+<p>まだ自分の言葉で表現できないものが多いので、引続き学習します。</p>
 
 <h2>印象に残った話</h2>
 
 <ul>
-<li><p>スタートアップ界隈ではブロックチェーンを使ったプロダクトやサービスがコンテストに参加したりしているが、「それって本当にブロックチェーンじゃなきゃだめなの？」って話に必ずなる</p></li>
-<li><p>スマートコントラクトについて、自動販売機のアナロジーはよく聞かれるが、詳しい人から見ても、わかりやすい良い例とのこと（誰が言い始めたんだろう）</p></li>
-<li><p>マイナーさんはMainnet/Testnetに関わらず、トランザクションの手数料でも稼いでいる</p></li>
-<li><p>ICOで上手く行っている例はまだ聞いたことがない（このあたりは事例を掘ってみると良い）</p></li>
+<li>スタートアップ界隈ではブロックチェーンを使ったプロダクトやサービスがコンテストに参加したりしているが、「それって本当にブロックチェーンじゃなきゃだめなの？」って話に必ずなる</li>
+<li>スマートコントラクトについて、自動販売機のアナロジーはよく聞かれるが、詳しい人から見ても、わかりやすい良い例とのこと（誰が言い始めたんだろう）</li>
+<li>マイナーさんはMainnet/Testnetに関わらず、トランザクションの手数料でも稼いでいる</li>
+<li>ICOで上手く行っている例はまだ聞いたことがない（このあたりは事例を掘ってみると良い）</li>
 </ul>
 
 
 <h2>深めるといいことあるかもなポイント</h2>
 
 <ul>
-<li><p>Dapp開発。これで具体的に何ができるようになるのか、WWWにおけるWebAppとの差異、強みが知りたい。</p></li>
-<li><p>今のBlockchainは、WWWの黎明期の状態に似ている。DARPANETとかインターネットの夜明けに関するストーリーを知りたい。</p></li>
+<li>Dapp開発。これで具体的に何ができるようになるのか、WWWにおけるWebAppとの差異、強みが知りたい。</li>
+<li>今のBlockchainは、WWWの黎明期の状態に似ている。DARPANETとかインターネットの夜明けに関するストーリーを知りたい。</li>
 </ul>
 
 
 <h2>まとめと感想</h2>
 
+<p>新しい高度なおもちゃを得た気分です。自分自身、あまり仮想通貨には興味はなくて（新しい通過が生まれ、価値を持ち始めるプロセスはめちゃめちゃオモロイので、それはウォッチしたい。あとその過程における人間の行動も）、今までにない、新しい発想のテクノロジーであるところに惹かれました。</p>
+
+<p>これは当分がっつり遊べるな、と。</p>
+
+<p>ただ、それを世の中に役立てる形がまだ見つかっていない気もします。Decentralizedであることが価値になるようなビジネスとは何か。それを理解しない限り、「それブロックチェーンである必要あるの？」ということになり、自然と人々が離れていってしまう。</p>
+
+<p>まだ薄っぺらーい知識しかないので、これからザクザク掘り下げていきたいと思います。とにかくDappはひとつふたつ作ってみたい！</p>
+
+<p>という感じでした。</p>
+
 <h2>このあとの学習法</h2>
 
 <ul>
-<li><p>CryptoZombies</p></li>
-<li><p>Udemy Splidity</p></li>
-<li><p>ブロックチェーンアプリケーション開発の教科書</p></li>
+<li><a href="https://cryptozombies.io/jp/">CryptoZombies</a></li>
+<li><a href="https://www.udemy.com/ethereum-and-solidity-the-complete-developers-guide/">Udemy Ethereum and Solidity: The Complete Developer&rsquo;s Guide</a></li>
+<li><a href="https://www.amazon.co.jp/dp/4839965137">ブロックチェーンアプリケーション開発の教科書</a></li>
 </ul>
 
 ]]></content>

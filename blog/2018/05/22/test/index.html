@@ -41,7 +41,7 @@
   <header role="banner"><hgroup>
   <h1><a href="/">こんたつブログ</a></h1>
   
-    <h2>トリハダ信じて進め人生日記</h2>
+    <h2>トリハダ信じて進めホリデープログラマー日記</h2>
   
 </hgroup>
 
@@ -154,7 +154,7 @@
 
 <h2>Github Pagesとの連携</h2>
 
-<p>あらかじめGithubで<code>username.github.io</code>というレポジトリを作成し、レポジトリのURLをコピペ。</p>
+<p>あらかじめGithubでレポジトリ<code>ttskonno.github.io</code>を作成し、レポジトリのURLをコピペ。</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -198,6 +198,8 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>ちなみにデプロイは<code>rake gen_deploy</code>というコマンド1つでも実行できます。</p>
+
 <h3>記事の投稿</h3>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -206,6 +208,12 @@
 </span><span class='line'>$ #-&gt; source/_post/に、YYYY-MM-DD-post-title.markdownというファイルができるので、これを編集する。
 </span></code></pre></td></tr></table></div></figure>
 
+
+<p>これでひととおりブログを投稿するまではできます。他にも<code>_config.yml</code>を編集すればAuthorやブログタイトルの編集なども可能です。</p>
+
+<p>テーマは[3rd party Octopress] Themes](<a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes</a>)を参照。コマンドで簡単に変更できます。もう少しバリエーションがほしいところ。あまりユーザーが居ないからなのかな。</p>
+
+<p>セットアップは少しハマったけど、Github Pagesにpushできたらあとは簡単。簡便化がOctopressを選んだ目的ではないが、少し自動化できるところがあれば、スクリプトを組んでみようかなと思っています。</p>
 
 <h2>参考</h2>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Howto | こんたつブログ]]></title>
   <link href="http://ttskonno.github.io/blog/categories/howto/atom.xml" rel="self"/>
   <link href="http://ttskonno.github.io/"/>
-  <updated>2018-05-24T06:25:25+09:00</updated>
+  <updated>2018-05-24T10:27:44+09:00</updated>
   <id>http://ttskonno.github.io/</id>
   <author>
     <name><![CDATA[ttskonno]]></name>
@@ -63,7 +63,7 @@ $ #-&gt; ブラウザでlocalhost:4000すればプレビューできる
 
 <h2>Github Pagesとの連携</h2>
 
-<p>あらかじめGithubで<code>username.github.io</code>というレポジトリを作成し、レポジトリのURLをコピペ。
+<p>あらかじめGithubでレポジトリ<code>ttskonno.github.io</code>を作成し、レポジトリのURLをコピペ。
 ```
 $ rake setup_github_pages
 Enter the read/write url for your repository
@@ -94,6 +94,9 @@ Repository url: git@github.com:ttskonno/ttskonno.github.io.git
 $ rake deploy</p>
 
 <pre><code>
+ちなみにデプロイは```rake gen_deploy```というコマンド1つでも実行できます。
+
+
 ### 記事の投稿
 </code></pre>
 
@@ -101,6 +104,12 @@ $ rake deploy</p>
 $ #-> source/_post/に、YYYY-MM-DD-post-title.markdownというファイルができるので、これを編集する。</p>
 
 <p>```</p>
+
+<p>これでひととおりブログを投稿するまではできます。他にも<code>_config.yml</code>を編集すればAuthorやブログタイトルの編集なども可能です。</p>
+
+<p>テーマは[3rd party Octopress] Themes](<a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes</a>)を参照。コマンドで簡単に変更できます。もう少しバリエーションがほしいところ。あまりユーザーが居ないからなのかな。</p>
+
+<p>セットアップは少しハマったけど、Github Pagesにpushできたらあとは簡単。簡便化がOctopressを選んだ目的ではないが、少し自動化できるところがあれば、スクリプトを組んでみようかなと思っています。</p>
 
 <h2>参考</h2>
 
